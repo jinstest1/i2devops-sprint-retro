@@ -1,4 +1,4 @@
-Example Voting App
+Sprint Retro Voting App
 =========
 
 Getting started
