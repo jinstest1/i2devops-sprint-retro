@@ -280,12 +280,7 @@ alertmanager:
 
   ## Security context to be added to alertmanager pods
   ##
-  securityContext:
-    runAsUser: 65534
-    runAsNonRoot: true
-    runAsGroup: 65534
-    fsGroup: 65534
-
+  securityContext: {}
   service:
     annotations: {}
     labels: {}
@@ -512,8 +507,6 @@ nodeExporter:
   ## Security context to be added to node-exporter pods
   ##
   securityContext: {}
-    # runAsUser: 0
-
   service:
     annotations:
       prometheus.io/scrape: "true"
@@ -874,7 +867,6 @@ server:
   ## Security context to be added to server pods
   ##
   securityContext: {}
-
   service:
     annotations: {}
     labels: {}
@@ -1034,7 +1026,6 @@ pushgateway:
   ## Security context to be added to push-gateway pods
   ##
   securityContext: {}
-
   service:
     annotations:
       prometheus.io/probe: pushgateway
