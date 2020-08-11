@@ -323,8 +323,8 @@ configmapReload:
     ## configmap-reload container image
     ##
     image:
-      repository: jimmidyson/configmap-reload
-      tag: v0.3.0
+      repository: registry.redhat.io/openshift-service-mesh/prometheus-rhel8
+      tag: sha256:6724990073f783d8e4aac5c9ff21a0b6c5ddba1c2a0f413bf2dbe480a08e1abd
       pullPolicy: IfNotPresent
 
     ## Additional configmap-reload container arguments
