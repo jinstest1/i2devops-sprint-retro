@@ -1033,7 +1033,7 @@ pushgateway:
 
   ## Security context to be added to push-gateway pods
   ##
-  securityContext:{}
+  securityContext: {}
 
   service:
     annotations:
